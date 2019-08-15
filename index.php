@@ -21,6 +21,20 @@
 </section>
 <section id="upcoming"></section>
 <section id="previous"></section>
-<section id="contact"></section>
+<section id="contact">
+    <form action="">
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        <input type="text" name="adress" id="adress" placeholder="Adress" required>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+        <div class="no-flex">
+            <input type="checkbox" name="checkbox" id="checkbox" required>
+            <label class="label" for="checkbox">I confirm that I have read and agreed to the
+                <a href="terms-and-conditions.html" target="_blank">terms and conditions</a>
+            </label>
+            <input type="submit" value="SEND">
+        </div>
+    </form>
+</section>
+<script src="script.js"></script>
 </body>
 </html>

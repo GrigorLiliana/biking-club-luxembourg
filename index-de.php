@@ -22,6 +22,18 @@
 </section>
 <section id="upcoming"></section>
 <section id="previous"></section>
-<section id="contact"></section>
+<section id="contact">
+<form action="">
+    <input type="text" name="name" id="name" placeholder="Name" required>
+    <input type="text" name="adress" id="adress" placeholder="Anschrift" required>
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="Nachricht" required></textarea>
+    <div class="no-flex">
+        <input type="checkbox" name="checkbox" id="checkbox" required>
+        <label class="label" for="checkbox">Ich bestätige, die Allgemeinen <a href="terms-and-conditions-de.html" target="_blank">Geschäftsbedingungen</a> gelesen zu haben und ihnen zuzustimmen</label>
+        <input type="submit" value="SENDEN">
+    </div>
+</form>
+</section>
+<script src="script.js"></script>
 </body>
 </html>

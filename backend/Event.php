@@ -24,7 +24,7 @@ class Event {
     // Setters
     public function setTitle($title) {
         if(is_string($title) && (strlen($title) >= 3 && strlen($title)<= 20))
-        $this->_$title = $title;
+        $this->_title = $title;
     }
 
     public function setDescriptionEN($descriptionEN) {
@@ -45,10 +45,7 @@ class Event {
     }
 
     public function setDate($date) {
-        if(is_string($breed) && (strlen($breed) >= 3 && strlen($breed)<= 20))
-            $this->_breed = $breed;
-        else
-            echo 'Breed not set cause you doesn\'t match constraints (3-20 characters)<br>';
+
     }
     // Getters
     public function getTitle() {
