@@ -13,7 +13,6 @@ html, body {
   margin: 0;
   padding: 0;
   border: 0;
-  text-align: center;
 }
 
 #landing {
@@ -23,12 +22,15 @@ html, body {
   height: 100%;
   width: 100%;
   text-align: center;
+  position: relative;
 }
 
 #landing h1 {
-  position: relative;
+  position: absolute;
+  right: 50%;
   top: 50%;
-  display: inline-block;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
   /*CSS Gradient Generator*/
   background: #f6f8f9;
   /* Old browsers */
@@ -40,12 +42,18 @@ html, body {
   width: 10rem;
 }
 
-a {
-  display: block;
+@media screen and (min-width: 768px) {
+  #landing h1 {
+    top: 10%;
+    right: 10%;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    display: inline-block;
+    width: initial;
+  }
 }
 
-a img {
-  display: block;
+#landing a img {
   width: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

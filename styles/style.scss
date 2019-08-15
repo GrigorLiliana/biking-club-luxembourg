@@ -10,7 +10,6 @@ html, body {
     margin: 0;
     padding: 0;
     border:0;
-    text-align: center;
 }
 #landing{
     background-image: url(../assets/landing.jpg);
@@ -19,23 +18,29 @@ html, body {
     height: 100%;
     width: 100%;
     text-align: center;
+    position: relative;
     h1{
-        position: relative;
+        position: absolute;
+        right: 50%;
         top: 50%;
-        display: inline-block;
+        transform: translate(50%, 50%);
         /*CSS Gradient Generator*/
         background: #f6f8f9; /* Old browsers */
         background: -moz-linear-gradient(left, #f6f8f944 0%, #e5ebee4b 50%, #a7aeaf59 100%, #f5f7f98a 100%, #a7aeaf9f 100%); /* FF3.6-15 */
         background: -webkit-linear-gradient(left, #f6f8f944 0%,#e5ebee4b 50%,#a7aeaf59 100%,#f5f7f98a 100%,#a7aeaf9f 100%); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to right, #f6f8f944 0%,#e5ebee4b 50%,#a7aeaf59 100%,#f5f7f98a 100%,#a7aeaf9f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         width: 10rem;
+        @media screen and (min-width: 768px){
+            top: 10%;
+            right: 10%;
+            transform: translate(0%, 0%);
+            display:inline-block;
+            width: initial;
+        }
     }
-}
-a{
-    display: block;
-
-    img{
-        display: block;
+    a{
+        img{
         width: 2rem;
+        }
     }
 }
