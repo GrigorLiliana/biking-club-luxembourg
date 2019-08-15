@@ -10,8 +10,13 @@
 </head>
 <body>
 <section id="landing">
-<a href="#landing">
-    <img src="assets/united-kingdom.png" alt="Select English language"></a>
+<div class="lang">
+        <a href="#landing">
+            <img src="assets/united-kingdom.png" alt="Select English language"></a>
+        <a href="index-de.php">
+            <img src="assets/germany.png" alt="Wählen Sie die deutsche Sprache">
+        </a>
+    </div>
     <h1>Biking Club Luxmbourg</h1>
 </section>
 <section id="upcoming"></section>

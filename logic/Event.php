@@ -1,5 +1,8 @@
 <?php
+
 namespace MyTest;
+
+require_once 'database-connection.php';
 
 class Event {
     private $_title;
@@ -20,10 +23,8 @@ class Event {
 
     // Setters
     public function setTitle($title) {
-        if(is_string($name) && (strlen($name) >= 3 && strlen($name)<= 20))
-            $this->_name = $name;
-        else
-        echo 'Name not set cause you doesn\'t match constraints (3-20 characters)<br>';
+        if(is_string($title) && (strlen($title) >= 3 && strlen($title)<= 20))
+        $this->_$title = $title;
     }
 
     public function setDescriptionEN($descriptionEN) {
@@ -78,7 +79,7 @@ class Event {
             $this->getCoverPicture(),
             $this->getPictureGallery(),
             $this->getDate()
-        ]
+        ];
     }
 }
 ?>

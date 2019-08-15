@@ -10,9 +10,15 @@
 </head>
 <body>
 <section id="landing">
-<a href="#landing">
-    <img src="assets/united-kingdom.png" alt="Select English language"></a>
-    <h1>Biking Club Luxmbourg</h1>
+    <div class="lang">
+        <a href="index.php">
+            <img src="assets/united-kingdom.png" alt="Select English language"></a>
+        <a href="#landing">
+            <img src="assets/germany.png" alt="Wählen Sie die deutsche Sprache">
+        </a>
+    </div>
+
+    <h1>Fahrradclub Luxemburg</h1>
 </section>
 <section id="upcoming"></section>
 <section id="previous"></section>
